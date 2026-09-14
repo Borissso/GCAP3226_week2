@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Policy Priorities</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f6f8fa; color: #222; }
+.container { max-width: 960px; margin: auto; padding: 20px; }
+header { background: #174a7c; color: #fff; padding: 30px 20px; border-radius: 8px; }
+header h1 { margin: 0 0 8px 0; font-size: 30px; }
+.search { margin: 20px 0; padding: 12px; width: 100%; box-sizing: border-box; font-size: 16px; border-radius: 8px; border: 1px solid #c6ccd4; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 12px 0; }
+.tab-button { background: #e7eef3; color: #174a7c; border: none; border-radius: 8px; padding: 10px 14px; font-weight: bold; cursor: pointer; }
+.tab-button.active { background: #174a7c; color: #fff; }
+.theme-panel { display: none; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.theme-panel.active { display: block; }
+.theme-panel h2 { margin-top: 0; color: #174a7c; }
+.theme-panel ul { padding-left: 22px; }
+.theme-panel li { line-height: 1.8; margin-bottom: 8px; }
+.theme-panel li .cue { color: #6b7280; font-size: 0.86em; font-weight: bold; }
+.footer { margin-top: 16px; color: #6b7280; font-size: 0.92em; border-top: 1px solid #d7dde3; padding-top: 14px; }
+@media (max-width: 700px) { .tabs { flex-direction: column; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Policy Priorities by Theme</h1>
+  <p>Source: <code>policy-full_en.pdf</code> contents and named sections only.</p>
+</header>
+
+<input class="search" type="search" id="searchBox" placeholder="Search priorities or section cues...">
+
+<div class="tabs" id="tabs">
+<button class="tab-button active" data-theme="Waste Reduction & Separation">Waste Reduction & Separation</button><button class="tab-button" data-theme="MSW Charging">MSW Charging</button><button class="tab-button" data-theme="Recycling & Composting">Recycling & Composting</button><button class="tab-button" data-theme="Food Waste Management">Food Waste Management</button><button class="tab-button" data-theme="Producer Responsibility">Producer Responsibility</button><button class="tab-button" data-theme="Public Engagement & Education">Public Engagement & Education</button><button class="tab-button" data-theme="Landfill / Incineration / Collection">Landfill / Incineration / Collection</button><button class="tab-button" data-theme="Statistics & Data">Statistics & Data</button>
+</div>
+<section class="theme-panel active" id="panel-0"><h2>Waste Reduction & Separation</h2><ul><li><span class="cue">Section cue: Waste Reduction & Separation</span> — Contents: Waste Reduction and Separation — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Waste Reduction & Separation</span> — Policy priority: reduce waste at source and separate waste streams according to the section title.</li><li><span class="cue">Section cue: Waste Reduction & Separation</span> — Checkable cue: the section title “Waste Reduction and Separation” appears in the PDF contents.</li><li><span class="cue">Section cue: Waste Reduction & Separation</span> — Checkable cue: this theme is named as a chapter in the policy document contents.</li></ul></section><section class="theme-panel" id="panel-1"><h2>MSW Charging</h2><ul><li><span class="cue">Section cue: MSW Charging</span> — Contents: Municipal Solid Waste Charging — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: MSW Charging</span> — Policy priority: implement or describe municipal solid waste charging as a named document section.</li><li><span class="cue">Section cue: MSW Charging</span> — Checkable cue: the section title “Municipal Solid Waste Charging” appears in the PDF contents.</li><li><span class="cue">Section cue: MSW Charging</span> — Checkable cue: the section is distinct from disposal and collection chapters in the same table of contents.</li></ul></section><section class="theme-panel" id="panel-2"><h2>Recycling & Composting</h2><ul><li><span class="cue">Section cue: Recycling & Composting</span> — Contents: Recycling and Composting — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Recycling & Composting</span> — Policy priority: address recycling and composting as a coordinated waste-management pathway.</li><li><span class="cue">Section cue: Recycling & Composting</span> — Checkable cue: “Recycling and Composting” is a named chapter title in the PDF contents.</li><li><span class="cue">Section cue: Recycling & Composting</span> — Checkable cue: section focuses on recycling and composting rather than only public education or charging.</li></ul></section><section class="theme-panel" id="panel-3"><h2>Food Waste Management</h2><ul><li><span class="cue">Section cue: Food Waste Management</span> — Contents: Food Waste Management — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Food Waste Management</span> — Policy priority: address food waste through the chapter named in the PDF contents.</li><li><span class="cue">Section cue: Food Waste Management</span> — Checkable cue: the section title “Food Waste Management” appears directly in the PDF contents.</li><li><span class="cue">Section cue: Food Waste Management</span> — Checkable cue: a distinct chapter that is not the same as recycling or composting.</li></ul></section><section class="theme-panel" id="panel-4"><h2>Producer Responsibility</h2><ul><li><span class="cue">Section cue: Producer Responsibility</span> — Contents: Extended Producer Responsibility — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Producer Responsibility</span> — Policy priority: use the named EPR chapter. The PDF contents explicitly title this section.</li><li><span class="cue">Section cue: Producer Responsibility</span> — Checkable cue: the section title “Extended Producer Responsibility” appears in the PDF contents.</li><li><span class="cue">Section cue: Producer Responsibility</span> — Checkable cue: this is a producer-facing chapter rather than collection or landfill treatment.</li></ul></section><section class="theme-panel" id="panel-5"><h2>Public Engagement & Education</h2><ul><li><span class="cue">Section cue: Public Engagement & Education</span> — Contents: Public Engagement and Education — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Public Engagement & Education</span> — Policy priority: support public engagement and education as a named policy chapter.</li><li><span class="cue">Section cue: Public Engagement & Education</span> — Checkable cue: the section title “Public Engagement and Education” appears in the PDF contents.</li><li><span class="cue">Section cue: Public Engagement & Education</span> — Checkable cue: this chapter is separate from infrastructure and collection sections.</li></ul></section><section class="theme-panel" id="panel-6"><h2>Landfill / Incineration / Collection</h2><ul><li><span class="cue">Section cue: Landfill / Incineration / Collection</span> — Contents: Landfill and Incineration — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Landfill / Incineration / Collection</span> — Contents: Waste Collection and Transportation — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Landfill / Incineration / Collection</span> — Policy priority: examine disposal and collection through the named landfill/incineration and collection chapters.</li><li><span class="cue">Section cue: Landfill / Incineration / Collection</span> — Checkable cue: both “Landfill and Incineration” and “Waste Collection and Transportation” appear in the contents.</li><li><span class="cue">Section cue: Landfill / Incineration / Collection</span> — Checkable cue: these are operational chapters distinct from household charging and recycling sections.</li></ul></section><section class="theme-panel" id="panel-7"><h2>Statistics & Data</h2><ul><li><span class="cue">Section cue: Statistics & Data</span> — Contents: Waste Statistics and Data — chapter theme from the PDF contents.</li><li><span class="cue">Section cue: Statistics & Data</span> — Policy priority: structure the policy story around data and statistics, as named in the contents.</li><li><span class="cue">Section cue: Statistics & Data</span> — Checkable cue: “Waste Statistics and Data” is a named chapter in the publicly visible contents.</li><li><span class="cue">Section cue: Statistics & Data</span> — Checkable cue: this is the section most directly linked to measurement and evidence.</li></ul></section>
+<footer class="footer">
+  <p>Summary only; not official advice.</p>
+</footer>
+</div>
+
+<script>
+const tabs = Array.from(document.getElementsByClassName('tab-button'));
+const panels = Array.from(document.getElementsByClassName('theme-panel'));
+const searchBox = document.getElementById('searchBox');
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.toggle('active', t === tab));
+    panels.forEach(panel => {
+      panel.classList.toggle('active', panel.id === 'panel-' + index);
+      panel.style.display = panel.classList.contains('active') ? 'block' : 'none';
+    });
+  });
+});
+
+searchBox.addEventListener('input', () => {
+  const term = searchBox.value.trim().toLowerCase();
+  panels.forEach(panel => {
+    const content = panel.textContent.toLowerCase();
+    const visible = !term || content.includes(term);
+    panel.style.display = visible ? 'block' : 'none';
+    if (!term) {
+      panel.classList.toggle('active', panel.id === 'panel-0');
+    }
+  });
+});
+</script>
+</body>
+</html>
